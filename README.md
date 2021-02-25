@@ -13,7 +13,7 @@ Trata-se de um projeto que está em desenvolvimento ao longo da quarta edição 
 ``` npm install ```
 
 4. Após baixar as dependências, inicie o servidor com:
-``` npm run start ```
+``` npm run dev ```
 
 5. Quando quiser finalizar o servidor, bastar usar o atalho ctrl + c para encerrar.
 
