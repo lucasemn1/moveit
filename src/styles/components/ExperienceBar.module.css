@@ -24,7 +24,7 @@
   background-color: var(--green);
 }
 
-.experienceBar > div > .currenExperience {
+.experienceBar > div > .currentExperience {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);
