@@ -6,29 +6,30 @@ import { ExperienceBar } from '../components/ExperienceBar';
 import { Countdown } from '../components/Countdown';
 import { ChallengeBox } from '../components/ChallengeBox';
 import { ChallengeProvider } from '../contexts/ChallengeContext';
+import { CountdownProvider } from '../contexts/CountdownContext';
 
 export default function Home() {
   return (
-    <ChallengeProvider>
-      <div className={ styles.container }>
-        <Head>
-          <title>Início | move.it</title>
-        </Head>
+      <CountdownProvider>
+        <div className={styles.container}>
+          <Head>
+            <title>Início | move.it</title>
+          </Head>
 
-        <ExperienceBar />
+          <ExperienceBar />
 
-        <section>
-          <div>
-            <Profile />
-            <CompletedChallenges />
-            <Countdown />
-          </div>
-          <div>
-            <ChallengeBox />
-          </div>
-          
-        </section>
-      </div>
-    </ChallengeProvider>
+          <section>
+            <div>
+              <Profile />
+              <CompletedChallenges />
+              <Countdown />
+            </div>
+            <div>
+              <ChallengeBox />
+            </div>
+
+          </section>
+        </div>
+      </CountdownProvider>
   )
 }
